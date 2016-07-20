@@ -2,12 +2,14 @@
 
 ScreenshotFrames adds attractive browser and device frames around your screenshots!
 
-Using it is extremely simple: add the screenshot-frames stylesheet (.less or .min.css), and then wrap the image with the appropriate class.
-
+&nbsp;
 **Check out the [demo pen!](http://codepen.io/henry/pen/NAYbNd?editors=1100)**
+&nbsp;
 
-&nbsp;  
-  
+Using it is extremely simple: add the screenshot-frames stylesheet (.less or .min.css), and then wrap the image with the appropriate class. You can also include the latest version (*currently v1.0.1*) from the RawGit CDN with
+
+	https://cdn.rawgit.com/olets/ScreenshotFrames/vThe.Latest.Version/screenshot-frames.min.css
+
 
 ## Currently supported
 #### Browsers
@@ -22,7 +24,25 @@ Useage:
 
 	<div class="screenshot-browser-lowercasebrowsernamehere">
 		<img ... />
-	</div>	
+	</div>
+
+&nbsp;
+
+----
+### Roadmap
+Add
+
+- iPad
+	- w/ Mobile Safari
+- iPhone
+	-  w/ Mobile Safari
+- MacBook
+- Desktop
+- some Android
+	- w/ Chrome For Mobile
+- Firefox
+
+&nbsp;
 	
 ## Acknowledgments
 
