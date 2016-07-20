@@ -13,7 +13,10 @@ Using it is extremely simple: add the screenshot-frames stylesheet (.less or .mi
 #### Browsers
 
 - Safari
+<img src="https://cdn.rawgit.com/olets/ScreenshotFrames/master/images/screenshot-frame--safari.png" width="400">
+
 - Chrome
+<img src="https://cdn.rawgit.com/olets/ScreenshotFrames/master/images/screenshot-frame--chrome.png" width="400">
 
 Useage: 
 
