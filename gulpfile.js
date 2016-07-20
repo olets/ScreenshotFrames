@@ -12,7 +12,7 @@ gulp.task('default', function(){
         this.emit('end');
     }}))
     .pipe(less())
-    .pipe(rename("screenshot-frames.css"))
+    .pipe(rename("screenshot-frames.min.css"))
     .pipe(cleancss())
     .pipe(gulp.dest("."))
 });
