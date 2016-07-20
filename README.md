@@ -4,8 +4,12 @@ ScreenshotFrames adds attractive browser and device frames around your screensho
 
 Using it is extremely simple: add the screenshot-frames stylesheet (.less or .min.css), and then wrap the image with the appropriate class.
 
-## Currently supported
+**Check out the [demo pen!](http://codepen.io/henry/pen/NAYbNd?editors=1100)**
 
+&nbsp;  
+  
+
+## Currently supported
 #### Browsers
 
 - Safari
