@@ -16,3 +16,8 @@ Useage:
 	<div class="screenshot-browser-lowercasebrowsernamehere">
 		<img ... />
 	</div>	
+	
+## Acknowledgments
+
+- Safari window is forked from [Ed Piel's "Safari UI Template for Sketch"](https://dribbble.com/shots/1995751-Safari-UI-Template-for-Sketch)
+- Chrome window is forked from [Ed Williams's "Chrome Window for Sketch.app & Dribbble"](https://dribbble.com/shots/2559150-Chrome-Window-for-Sketch-app-Dribbble)	
