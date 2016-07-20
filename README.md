@@ -30,8 +30,9 @@ Useage:
 
 ----
 ### Roadmap
-Add
 
+- ~~Chrome~~
+- ~~Safari~~
 - iPad
 	- w/ Mobile Safari
 - iPhone
