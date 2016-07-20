@@ -1,0 +1,27 @@
+{
+  "name": "ScreenshotFrames",
+  "description": "Styles for adding browser and device frames to images",
+  "main": "screenshot-frames.min.css",
+  "authors": [
+    "Henry Bley-Vroman"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "screenshot",
+    "frame",
+    "html",
+    "css",
+    "device",
+    "browser",
+    "safari",
+    "chrome"
+  ],
+  "homepage": "https://github.com/olets/ScreenshotFrames",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
