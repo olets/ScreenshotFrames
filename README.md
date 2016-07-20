@@ -14,10 +14,10 @@ Using it is extremely simple: add the screenshot-frames stylesheet (.less or .mi
 ## Currently supported
 #### Browsers
 
-- Safari  
+- Safari (charcoal border is just for demo purposes)  
 <img src="https://cdn.rawgit.com/olets/ScreenshotFrames/master/images/screenshot-frame--safari.png" width="400">
 
-- Chrome  
+- Chrome (charcoal border is just for demo purposes)  
 <img src="https://cdn.rawgit.com/olets/ScreenshotFrames/master/images/screenshot-frame--chrome.png" width="400">
 
 Useage: 
