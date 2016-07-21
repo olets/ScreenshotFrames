@@ -64,7 +64,7 @@ use `.screenshot-iphone`
 
 ### Known Issues
 
-The gradients on the metal rings of the iPad and iPhone home buttons isn't working.
+The gradients on the metal rings of the iPad and iPhone home buttons aren't working.
 
 &nbsp;
 	
