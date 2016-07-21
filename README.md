@@ -1,5 +1,5 @@
 # ScreenshotFrames
-v1.2
+v1.2.1
 
 ScreenshotFrames adds attractive browser and device frames around your screenshots!
 
@@ -12,7 +12,7 @@ Using it is extremely simple: add the screenshot-frames stylesheet (.less or .mi
 		<img ... />
 	</div>
 
-You can also include the latest version (*currently v1.2*) from the RawGit CDN with
+You can also include the latest version (*currently v1.2.1*) from the RawGit CDN with
 
 	https://cdn.rawgit.com/olets/ScreenshotFrames/vThe.Latest.Version/screenshot-frames.min.css
 
