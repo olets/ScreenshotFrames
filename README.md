@@ -64,6 +64,10 @@ use `.screenshot-device-iphone`
 	- w/ Chrome For Mobile
 - Firefox
 
+### Known Issues
+
+The gradients on the metal rings of the iPad and iPhone home buttons isn't working.
+
 &nbsp;
 	
 ## Acknowledgments
