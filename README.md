@@ -25,23 +25,23 @@ You can also include the latest version (*currently v1.2*) from the RawGit CDN w
 
 - Safari  
 use `.screenshot-browser-safari`  
-<img src="https://raw.githubusercontent.com/olets/ScreenshotFrames/v1.2/images/safari.png" width="400">
+<img src="https://raw.githubusercontent.com/olets/ScreenshotFrames/master/images/safari.png" width="400">
 
 - Chrome  
 use `.screenshot-browser-chrome`  
-<img src="https://raw.githubusercontent.com/olets/ScreenshotFrames/v1.2/images/chrome.png" width="400">
+<img src="https://raw.githubusercontent.com/olets/ScreenshotFrames/master/images/chrome.png" width="400">
 
 #### Devices
 
 - iPad Air (silver)  
 use `.screenshot-device-ipad`  
 *takes screenshot with ratio 3x4*  
-<img src="https://raw.githubusercontent.com/olets/ScreenshotFrames/v1.2/images/ipad.png" width="300">
+<img src="https://raw.githubusercontent.com/olets/ScreenshotFrames/master/images/ipad.png" width="300">
 
 - iPhone 6S (silver)  
 use `.screenshot-device-iphone`  
 *takes screenshot with ratio 375x667*  
-<img src="https://raw.githubusercontent.com/olets/ScreenshotFrames/v1.2/images/iphone.png" width="200">
+<img src="https://raw.githubusercontent.com/olets/ScreenshotFrames/master/images/iphone.png" width="200">
 
 
 &nbsp;
