@@ -1,6 +1,6 @@
 {
   "name": "ScreenshotFrames",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Styles for adding browser and device frames to images",
   "main": "screenshot-frames/screenshot-frames.min.css",
   "scripts": {
