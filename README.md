@@ -25,24 +25,24 @@ The `.screenshot-frame` has to be 100% wide, can't have padding, and can't have 
 #### Browsers
 
 - Safari  
-use `.screenshot-browser-safari`  
+use `.screenshot-safari`  
 *screenshot ratio doesn't matter; container should be > 310px wide*  
 <img src="https://raw.githubusercontent.com/olets/ScreenshotFrames/master/images/safari.png" width="400">
 
 - Chrome  
-use `.screenshot-browser-chrome`  
+use `.screenshot-chrome`  
 *screenshot ratio doesn't matter; container should be > 350px wide*  
 <img src="https://raw.githubusercontent.com/olets/ScreenshotFrames/master/images/chrome.png" width="400">
 
 #### Devices
 
 - iPad Air (silver)  
-use `.screenshot-device-ipad`  
+use `.screenshot-ipad`  
 *takes screenshot with ratio 3x4*  
 <img src="https://raw.githubusercontent.com/olets/ScreenshotFrames/master/images/ipad.png" width="300">
 
 - iPhone 6S (silver)  
-use `.screenshot-device-iphone`  
+use `.screenshot-iphone`  
 *takes screenshot with ratio 375x667*  
 <img src="https://raw.githubusercontent.com/olets/ScreenshotFrames/master/images/iphone.png" width="200">
 
