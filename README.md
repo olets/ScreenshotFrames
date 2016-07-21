@@ -25,10 +25,12 @@ You can also include the latest version (*currently v1.2*) from the RawGit CDN w
 
 - Safari  
 use `.screenshot-browser-safari`  
+*screenshot ratio doesn't matter; container should be > 310px wide*  
 <img src="https://raw.githubusercontent.com/olets/ScreenshotFrames/master/images/safari.png" width="400">
 
 - Chrome  
 use `.screenshot-browser-chrome`  
+*screenshot ratio doesn't matter; container should be > 350px wide*  
 <img src="https://raw.githubusercontent.com/olets/ScreenshotFrames/master/images/chrome.png" width="400">
 
 #### Devices
