@@ -5,14 +5,16 @@ const	gulp = require('gulp'),
 		rename = require('gulp-rename');
 
 gulp.task('default', function(){
-  gulp.src(['screenshot-frames/screenshot-frames.less'])
+  gulp.src(['./src/screenshot-frames.less'])
     .pipe(plumber({
       errorHandler: function (error) {
         console.log(error.message);
         this.emit('end');
     }}))
     .pipe(less())
-    .pipe(rename("screenshot-frames/screenshot-frames.min.css"))
-    .pipe(cleancss())
+    .pipe(rename("screenshot-frames.min.css"))
+    .pipe(cleancss({
+        keepSpecialComments: 1
+    }))
     .pipe(gulp.dest("."))
 });
