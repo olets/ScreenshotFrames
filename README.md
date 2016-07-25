@@ -1,5 +1,5 @@
 # ScreenshotFrames
-v1.2.4
+v1.2.5
 
 ScreenshotFrames adds attractive browser and device frames around your screenshots!
 
@@ -61,10 +61,6 @@ use `.screenshot-iphone`
 - some Android
 	- w/ Chrome For Mobile
 - Firefox
-
-### Known Issues
-
-The gradients on the metal rings of the iPad and iPhone home buttons aren't working.
 
 &nbsp;
 	
