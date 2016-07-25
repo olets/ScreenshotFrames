@@ -70,6 +70,7 @@ The gradients on the metal rings of the iPad and iPhone home buttons aren't work
 	
 ## Acknowledgments
 
-- Safari window is forked from [Ed Piel's "Safari UI Template for Sketch"](https://dribbble.com/shots/1995751-Safari-UI-Template-for-Sketch)
-- Chrome window is forked from [Ed Williams's "Chrome Window for Sketch.app & Dribbble"](https://dribbble.com/shots/2559150-Chrome-Window-for-Sketch-app-Dribbble)
-- iPad and iPhone from [Facebook Design](http://facebook.design/devices)
+- Safari forked from [Ed Piel's "Safari UI Template for Sketch"](https://dribbble.com/shots/1995751-Safari-UI-Template-for-Sketch)
+- Chrome forked from [Ed Williams's "Chrome Window for Sketch.app & Dribbble"](https://dribbble.com/shots/2559150-Chrome-Window-for-Sketch-app-Dribbble)
+- iPad forked from [DTAIL Studio](https://dribbble.com/shots/1716707-Free-Download-The-Ultimate-Mobile-Devices-Pack) with colors from [Facebook Design](http://facebook.design/devices)
+- iPhone forked from [Philip Wong](https://dribbble.com/shots/2204754-Free-Slate-style-iPhone-6-6-mockup-Sketch) with colors from [Facebook Design](http://facebook.design/devices)
