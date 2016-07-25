@@ -27,8 +27,10 @@
   },
   "homepage": "https://github.com/olets/ScreenshotFrames",
   "dependencies": {
+    "del": "^2.2.1",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^2.0.11",
+    "gulp-inject": "^4.1.0",
     "gulp-less": "^3.1.0",
     "gulp-plumber": "^1.1.0",
     "gulp-rename": "^1.2.2"
