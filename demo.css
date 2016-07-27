@@ -1,0 +1,26 @@
+/*
+
+  ScreenshotFrames
+
+  v1.2.6 - 2016-07-25
+
+  https://github.com/olets/ScreenshotFrames
+  Copyright (c) 2016 Henry Bley-Vroman (@olets)
+  MIT License
+
+  ScreenshotFrames included from the project on GitHub.
+  Check it out there!
+
+
+*/
+
+/* styles for demo purposes */
+body {margin: 40px}
+h1 {font-weight: 700; font-size: larger}
+p {margin-bottom: 20px}
+#demo {width: 400px}
+#demo div {
+  display: block;
+  vertical-align: top;
+  margin-bottom: 40px
+}
