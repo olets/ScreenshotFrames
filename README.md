@@ -76,7 +76,7 @@ PRs are welcome. For each new frame
 - in *src/screenshot-frames.less*:
 	- add the frame class where appropriate
 	- import the stylesheet
-- add a demo to *demo.html*
+- add a demo to *demo/demo.html*
 - if appropriate, credit the illustrator in the *README.md*'s "Acknowledgments"
 
 &nbsp;
