@@ -9,8 +9,30 @@
  */
 
 @import 'screenshot-frames-mixins';
-@import 'screenshot-frames-base';
 
+/* EVERY frame gets listed here */
+.screenshot-chrome,
+.screenshot-safari,
+.screenshot-ipad,
+.screenshot-iphone,
+.screenshot-macbook  {
+    .screenshot-frame
+}
+
+/* every window-type frame gets listed here too */
+.screenshot-chrome,
+.screenshot-safari {
+    .screenshot-frame-window
+}
+
+/* every device-type frame gets listed here */
+.screenshot-ipad,
+.screenshot-iphone,
+.screenshot-macbook {
+    .screenshot-frame-device
+}
+
+/* EVERY frame stylesheet gets listed here */
 @import 'screenshot-frame-safari';
 @import 'screenshot-frame-chrome';
 @import 'screenshot-frame-ipad';
