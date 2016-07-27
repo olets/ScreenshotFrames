@@ -29,12 +29,12 @@ You can also build your own custom set of frames (requires node): clone or downl
 
 - Safari  
 use `.screenshot-safari`  
-*screenshot ratio doesn't matter; container should be > 310px wide*  
+*screenshot ratio doesn't matter; container should be ≥ 310px wide*  
 <img src="https://raw.githubusercontent.com/olets/ScreenshotFrames/master/images/safari.png" width="400">
 
 - Chrome  
 use `.screenshot-chrome`  
-*screenshot ratio doesn't matter; container should be > 350px wide*  
+*screenshot ratio doesn't matter; container should be ≥ 220px wide*  
 <img src="https://raw.githubusercontent.com/olets/ScreenshotFrames/master/images/chrome.png" width="400">
 
 #### Desktop
