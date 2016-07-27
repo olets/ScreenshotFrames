@@ -19,7 +19,7 @@ The `.screenshot-frame` must be 100% wide, can't have padding, and can't have an
 
 &nbsp;
 
-## Currently supported
+## Available Frames
 
 If you don't need support for all of these, use the light weight *screenshot-frames-basics.min.css* which only includes support for Safari, iPad, and iPhone.
 
