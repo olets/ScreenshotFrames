@@ -7,15 +7,15 @@ ScreenshotFrames adds attractive browser and device frames around your screensho
 
 &nbsp;
 
-Using it is extremely simple: add [screenshot-frames.min.css](https://github.com/olets/ScreenshotFrames/blob/master/screenshot-frames.min.css), and then wrap the image with the appropriate class like
+Using ScreenshotFrames is extremely simple: add [screenshot-frames.min.css](https://github.com/olets/ScreenshotFrames/blob/master/screenshot-frames.min.css) (or, in the [basic version](https://github.com/olets/ScreenshotFrames/tree/basics), [screenshot-frames-basics.min.css](https://github.com/olets/ScreenshotFrames/blob/basics/screenshot-frames-basics.min.css)), and then wrap the image with the appropriate class like
 
-	<div class="screenshot-framename">
+	<div class="screenshot-frame">
 		<img ... />
 	</div>
 
 #### Restrictions
 
-The `.screenshot-frame` has to be 100% wide, can't have padding, and can't have any margins other than margin-bottom. Use a wrapping container to control width and margins as necessary.	
+The `.screenshot-frame` must be 100% wide, can't have padding, and can't have any margins other than margin-bottom. Use a wrapping container to control width and margins as necessary.	
 
 &nbsp;
 
