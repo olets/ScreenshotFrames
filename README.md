@@ -20,6 +20,9 @@ The `.screenshot-frame` has to be 100% wide, can't have padding, and can't have 
 &nbsp;
 
 ## Currently supported
+
+If you don't need support for all of these, use the light weight ["Basics" branch](https://github.com/olets/ScreenshotFrames/tree/basics) which only includes support Safari, iPad, and iPhone. You can also build your own custom set of frames by commenting out parts of *src/screenshot-frames.less* as necessary and running `npm install` (may require `sudo` depending on your setup) and then `gulp` to generate *screenshot-frames.min.css*.)
+
 #### Browsers
 
 - Safari  
