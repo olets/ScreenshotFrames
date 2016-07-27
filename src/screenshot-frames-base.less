@@ -1,48 +1,18 @@
-.screenshot-frame() {
-    position: relative;
-    padding: 0;
-    margin-top: 0;
-    margin-right: 0;
-    margin-left: 0;
-    img {
-        width: 100%;
-    }
-    &:after {
-        background-repeat: no-repeat;
-    }
+.screenshot-chrome,
+.screenshot-safari,
+.screenshot-ipad,
+.screenshot-iphone,
+.screenshot-macbook  {
+    .screenshot-frame
 }
 
-.screenshot-frame-window() {
-    border-radius: 3px 3px 0px 0px;
-    -moz-border-radius: 3px 3px 0px 0px;
-    -webkit-border-radius: 3px 3px 0px 0px;
+.screenshot-chrome,
+.screenshot-safari {
+    .screenshot-frame-window
 }
 
-.screenshot-frame-device() {
-    height: 0;
-    img {
-        position: absolute;
-        width: auto;
-        outline: 2px solid #1D1D1D;
-    }
-    &:after {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        -webkit-background-size: cover;
-        background-size: cover;
-    }
-}
-
-.screenshot-frame-device-screen(@device_width, @device_height, @screen_width, @screen_height, @screen_left, @screen_top) {
-    padding-top: 100% / (@device_width / @device_height);
-    img {
-        left: percentage(@screen_left / @device_width);
-        width: percentage(@screen_width / @device_width);
-        top: percentage(@screen_top / @device_height);
-        height: percentage(@screen_height / @device_height);
-    }
+.screenshot-ipad,
+.screenshot-iphone,
+.screenshot-macbook {
+    .screenshot-frame-device
 }
