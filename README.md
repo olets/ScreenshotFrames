@@ -32,7 +32,24 @@ use `.screenshot-chrome`
 *screenshot ratio doesn't matter; container should be > 350px wide*  
 <img src="https://raw.githubusercontent.com/olets/ScreenshotFrames/master/images/chrome.png" width="400">
 
-#### Devices
+#### Desktop
+
+- MacBook Pro  
+use `.screenshot-macbook`  
+*takes screenshot with ratio 393x245*  
+<img src="https://raw.githubusercontent.com/olets/ScreenshotFrames/master/images/macbook.png" width="400">
+
+- Mac Desktop  
+use `.screenshot-mac`  
+*takes screenshot with ratio 16x9*  
+<img src="https://raw.githubusercontent.com/olets/ScreenshotFrames/master/images/mac.png" width="400">
+
+- PC Desktop  
+use `.screenshot-pc`  
+*takes screenshot with ratio 16x9*  
+<img src="https://raw.githubusercontent.com/olets/ScreenshotFrames/master/images/pc.png" width="400">
+
+#### Mobile
 
 - iPad Air (silver)  
 use `.screenshot-ipad`  
@@ -43,11 +60,6 @@ use `.screenshot-ipad`
 use `.screenshot-iphone`  
 *takes screenshot with ratio 375x667*  
 <img src="https://raw.githubusercontent.com/olets/ScreenshotFrames/master/images/iphone.png" width="200">
-
-- MacBook Pro  
-use `.screenshot-macbook`  
-*takes screenshot with ratio 393x245*  
-<img src="https://raw.githubusercontent.com/olets/ScreenshotFrames/master/images/macbook.png" width="300">
 
 &nbsp;
 
