@@ -1,5 +1,5 @@
 # ScreenshotFrames
-v1.3.2
+v1.3.3
 
 ScreenshotFrames adds attractive browser and device frames around your screenshots!
 
