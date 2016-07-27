@@ -44,6 +44,10 @@ use `.screenshot-iphone`
 *takes screenshot with ratio 375x667*  
 <img src="https://raw.githubusercontent.com/olets/ScreenshotFrames/master/images/iphone.png" width="200">
 
+- MacBook Pro  
+use `.screenshot-macbook`  
+*takes screenshot with ratio 393x245*  
+<img src="https://raw.githubusercontent.com/olets/ScreenshotFrames/master/images/macbook.png" width="300">
 
 &nbsp;
 
@@ -56,7 +60,7 @@ use `.screenshot-iphone`
 	- w/ Mobile Safari
 - ~~iPhone~~
 	-  w/ Mobile Safari
-- MacBook
+- ~~MacBook~~
 - Desktop
 - some Android
 	- w/ Chrome For Mobile
@@ -70,3 +74,4 @@ use `.screenshot-iphone`
 - Chrome forked from [Ed Williams's "Chrome Window for Sketch.app & Dribbble"](https://dribbble.com/shots/2559150-Chrome-Window-for-Sketch-app-Dribbble)
 - iPad forked from [DTAIL Studio](https://dribbble.com/shots/1716707-Free-Download-The-Ultimate-Mobile-Devices-Pack) with colors from [Facebook Design](http://facebook.design/devices)
 - iPhone forked from [Philip Wong](https://dribbble.com/shots/2204754-Free-Slate-style-iPhone-6-6-mockup-Sketch) with colors from [Facebook Design](http://facebook.design/devices)
+- MacBook optimized from [Peter Hol](https://dribbble.com/shots/1663223-Apple-devices-Sketch-file)
