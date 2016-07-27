@@ -2,7 +2,7 @@
 
   ScreenshotFrames
 
-  v1.3.2 - 2016-07-27
+  v1.3.3 - 2016-07-25
 
   https://github.com/olets/ScreenshotFrames
   Copyright (c) 2016 Henry Bley-Vroman (@olets)
@@ -17,6 +17,7 @@
 /* styles for demo purposes */
 body {margin: 40px}
 h1 {font-weight: 700; font-size: larger}
+h2 {font-weight: 600; font-size: large}
 p {margin-bottom: 20px}
 #demo {width: 400px}
 #demo div {
