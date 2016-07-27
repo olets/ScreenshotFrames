@@ -7,7 +7,7 @@ ScreenshotFrames adds attractive browser and device frames around your screensho
 
 &nbsp;
 
-Using ScreenshotFrames is extremely simple: add [screenshot-frames.min.css](https://github.com/olets/ScreenshotFrames/blob/master/screenshot-frames.min.css) (or, in the [basic version](https://github.com/olets/ScreenshotFrames/tree/basics), [screenshot-frames-basics.min.css](https://github.com/olets/ScreenshotFrames/blob/basics/screenshot-frames-basics.min.css)), and then wrap the image with the appropriate class like
+Using ScreenshotFrames is extremely simple: add [screenshot-frames.min.css](https://github.com/olets/ScreenshotFrames/blob/master/screenshot-frames.min.css) (or [screenshot-frames-basics.min.css](https://github.com/olets/ScreenshotFrames/blob/master/screenshot-frames-basics.min.css)), and then wrap the image with the appropriate class like
 
 	<div class="screenshot-frame">
 		<img ... />
@@ -21,9 +21,9 @@ The `.screenshot-frame` must be 100% wide, can't have padding, and can't have an
 
 ## Currently supported
 
-If you don't need support for all of these, use the light weight ["Basics" branch](https://github.com/olets/ScreenshotFrames/tree/basics) which only includes support Safari, iPad, and iPhone.
+If you don't need support for all of these, use the light weight *screenshot-frames-basics.min.css* which only includes support Safari, iPad, and iPhone.
 
-You can also build your own custom set of frames (requires node): clone or download the repo, comment out parts of *src/screenshot-frames.less* as necessary, `cd` to the main local ScreenshotFrames directory, run `npm install` (may require `sudo npm install` depending on your setup), and then run `gulp` to generate *screenshot-frames.min.css*.
+You can also build your own custom set of frames (requires node): clone or download the repo, comment out parts of *src/screenshot-frames.less* as necessary, `cd` to the main local ScreenshotFrames directory, run `npm install` (may require `sudo npm install` depending on your setup), and then run `gulp screenshot-frames` to generate *screenshot-frames.min.css*.
 
 #### Browsers
 
