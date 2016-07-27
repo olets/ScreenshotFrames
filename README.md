@@ -62,7 +62,8 @@ use `.screenshot-macbook`
 - ~~iPhone~~
 	-  w/ Mobile Safari
 - ~~MacBook~~
-- Desktop
+- ~~Mac desktop~~
+- ~~PC desktop~~
 - some Android
 	- w/ Chrome For Mobile
 - Firefox
@@ -86,5 +87,7 @@ PRs are welcome. For each new frame
 - Chrome forked from [Ed Williams's "Chrome Window for Sketch.app & Dribbble"](https://dribbble.com/shots/2559150-Chrome-Window-for-Sketch-app-Dribbble)
 - iPad forked from [DTAIL Studio's "The Ultimate Mobile Devices Pack"](https://dribbble.com/shots/1716707-Free-Download-The-Ultimate-Mobile-Devices-Pack) with colors from [Facebook Design's "Apple iPad Air"](http://facebook.design/devices)
 - iPhone forked from [Philip Wong's "Free: Slate style iPhone 6 / 6+ mockup"](https://dribbble.com/shots/2204754-Free-Slate-style-iPhone-6-6-mockup-Sketch) with colors from [Facebook Design's "Apple iPhone 6S"](http://facebook.design/devices)
+- Mac desktop forked from [Facebook Design's "Apple Thunderbolt Display"](http://facebook.design/devices)
 - MacBook forked from [Peter Hol's "Apple devices Sketch file"](https://dribbble.com/shots/1663223-Apple-devices-Sketch-file)
+- PC desktop forked from [Facebook Design's "Dell Ultrasharp Monitor"](http://facebook.design/devices)
 - Safari forked from [Ed Piel's "Safari UI Template for Sketch"](https://dribbble.com/shots/1995751-Safari-UI-Template-for-Sketch)
