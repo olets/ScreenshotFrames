@@ -39,7 +39,7 @@ use `.screenshot-chrome`
 
 #### Desktop
 
-- MacBook Pro  
+- MacBook  
 use `.screenshot-macbook`  
 *takes screenshot with ratio 393x245*  
 <img src="https://raw.githubusercontent.com/olets/ScreenshotFrames/master/images/macbook.png" width="400">
@@ -72,7 +72,6 @@ use `.screenshot-iphone`
 ### Roadmap
 
 - ~~Chrome~~
-	- needs to work at 320
 - ~~Safari~~
 - ~~iPad~~
 	- w/ Mobile Safari
