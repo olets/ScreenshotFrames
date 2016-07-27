@@ -1,7 +1,7 @@
 {
   "name": "ScreenshotFrames",
   "description": "Styles for adding browser and device frames to images",
-  "main": "screenshot-frames/screenshot-frames.min.css",
+  "main": "screenshot-frames.min.css",
   "authors": [
     "Henry Bley-Vroman"
   ],
