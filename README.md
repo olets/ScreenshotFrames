@@ -83,8 +83,8 @@ PRs are welcome. For each new frame
 	
 ## Acknowledgments
 
-- Safari forked from [Ed Piel's "Safari UI Template for Sketch"](https://dribbble.com/shots/1995751-Safari-UI-Template-for-Sketch)
 - Chrome forked from [Ed Williams's "Chrome Window for Sketch.app & Dribbble"](https://dribbble.com/shots/2559150-Chrome-Window-for-Sketch-app-Dribbble)
-- iPad forked from [DTAIL Studio](https://dribbble.com/shots/1716707-Free-Download-The-Ultimate-Mobile-Devices-Pack) with colors from [Facebook Design](http://facebook.design/devices)
-- iPhone forked from [Philip Wong](https://dribbble.com/shots/2204754-Free-Slate-style-iPhone-6-6-mockup-Sketch) with colors from [Facebook Design](http://facebook.design/devices)
-- MacBook optimized from [Peter Hol](https://dribbble.com/shots/1663223-Apple-devices-Sketch-file)
+- iPad forked from [DTAIL Studio's "The Ultimate Mobile Devices Pack"](https://dribbble.com/shots/1716707-Free-Download-The-Ultimate-Mobile-Devices-Pack) with colors from [Facebook Design's "Apple iPad Air"](http://facebook.design/devices)
+- iPhone forked from [Philip Wong's "Free: Slate style iPhone 6 / 6+ mockup"](https://dribbble.com/shots/2204754-Free-Slate-style-iPhone-6-6-mockup-Sketch) with colors from [Facebook Design's "Apple iPhone 6S"](http://facebook.design/devices)
+- MacBook forked from [Peter Hol's "Apple devices Sketch file"](https://dribbble.com/shots/1663223-Apple-devices-Sketch-file)
+- Safari forked from [Ed Piel's "Safari UI Template for Sketch"](https://dribbble.com/shots/1995751-Safari-UI-Template-for-Sketch)
