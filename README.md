@@ -41,29 +41,29 @@ use `.screenshot-chrome`
 
 - MacBook  
 use `.screenshot-macbook`  
-*takes image with aspect ratio 393x245*  
+*takes image with aspect ratio 393:245*  
 <img src="https://raw.githubusercontent.com/olets/ScreenshotFrames/master/images/macbook.png" width="400">
 
 - Mac monitor  
 use `.screenshot-mac`  
-*takes image with aspect ratio 16x9*  
+*takes image with aspect ratio 16:9*  
 <img src="https://raw.githubusercontent.com/olets/ScreenshotFrames/master/images/mac.png" width="400">
 
 - PC monitor  
 use `.screenshot-pc`  
-*takes image with aspect ratio 16x9*  
+*takes image with aspect ratio 16:9*  
 <img src="https://raw.githubusercontent.com/olets/ScreenshotFrames/master/images/pc.png" width="400">
 
 #### Mobile
 
 - iPad Air (silver)  
 use `.screenshot-ipad`  
-*takes image with aspect ratio 3x4*  
+*takes image with aspect ratio 3:4*  
 <img src="https://raw.githubusercontent.com/olets/ScreenshotFrames/master/images/ipad.png" width="300">
 
 - iPhone 6S (silver)  
 use `.screenshot-iphone`  
-*takes image with aspect ratio 375x667*  
+*takes image with aspect ratio 375:667*  
 <img src="https://raw.githubusercontent.com/olets/ScreenshotFrames/master/images/iphone.png" width="200">
 
 &nbsp;
