@@ -42,7 +42,7 @@ gulp.task('screenshot-frames:prep:svg', function(file) {
 });
 
 gulp.task('screenshot-frames:build:custom', function() {
-    gulp.src(['./compiled/screenshot-frames.less'])
+    gulp.src(['./compiled/screenshot-frames-custom.less'])
         .pipe(plumber({
             errorHandler: function(error) {
                 console.log(error.message);
