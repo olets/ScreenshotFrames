@@ -89,8 +89,9 @@ use `.screenshot-iphone`
 ## Contributing
 PRs are welcome. For each new frame
 
-- add the stylesheet *src/screenshot-frame-framename.less*
-- in *src/screenshot-frames.less*:
+- add the stylesheet *src/framename/screenshot-frame-framename.less*
+- if appropriate, add the svg *src/framename/framname.svg*
+- in *src/screenshot-frames.less* and *src/screenshot-frames-basics.less*:
 	- add the frame class where appropriate
 	- import the stylesheet
 - add a demo to *demo/demo.html*
