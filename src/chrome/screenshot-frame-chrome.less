@@ -1,0 +1,34 @@
+.screenshot-chrome {
+    padding-top: 66px;
+    background: #EAEAEA;
+    background: -moz-linear-gradient(top, #EAEAEA 0%, #EAEAEA 33px, #FEFEFE 33px, #EAEAEA 65px, #7A7A7A 65px, #7A7A7A 66px, transparent 67px, transparent 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #EAEAEA), color-stop(33px, #EAEAEA), color-stop(33px, #FEFEFE), color-stop(65px, #EAEAEA), color-stop(65px, #7A7A7A), color-stop(66px, #7A7A7A), color-stop(67px, transparent), color-stop(100%, transparent));
+    background: -webkit-linear-gradient(top, #EAEAEA 0%, #EAEAEA 33px, #FEFEFE 33px, #EAEAEA 65px, #7A7A7A 65px, #7A7A7A 66px, transparent 67px, transparent 100%);
+    background: -o-linear-gradient(top, #EAEAEA 0%, #EAEAEA 33px, #FEFEFE 33px, #EAEAEA 65px, #7A7A7A 65px, #7A7A7A 66px, transparent 67px, transparent 100%);
+    background: -ms-linear-gradient(top, #EAEAEA 0%, #EAEAEA 33px, #FEFEFE 33px, #EAEAEA 65px, #7A7A7A 65px, #7A7A7A 66px, transparent 67px, transparent 100%);
+    background: linear-gradient(to bottom, #EAEAEA 0%, #EAEAEA 33px, #FEFEFE 33px, #EAEAEA 65px, #7A7A7A 65px, #7A7A7A 66px, transparent 67px, transparent 100%);
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+    }
+    &:before {
+        left: 115px;
+        top: 38px;
+        right: 60px;
+        height: 22px;
+        min-width: 100px;
+        background: #fff;
+        border-radius: 3px;
+        border: 1px solid #eaeaea;
+    }
+    &:after {
+        left: 10px;
+        top: 10px;
+        width: 100%;
+        height: 46px;
+        -webkit-background-size: contain;
+        background-size: contain;
+        /* inject:svg_bg_img */background-image: url('data:image/svg+xml;utf8,');/* endinject */
+    }
+}

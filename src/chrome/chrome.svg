@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="110" height="24" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient id="i" x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop stop-color="#FFF" offset="0%" />
+            <stop stop-color="#FEFEFE" offset="100%" />
+        </linearGradient>
+        <path id="a" d="M.4 5C.2 4.3.4 4 1 4h3c.5 0 1 .5 1 1 0 .6-.5 1-1 1H1L0 4.6l.2.4z" />
+        <mask id="j" width="4.8" height="2" x="0" y="0" fill="#fff">
+            <use xlink:href="#a" />
+        </mask>
+        <path id="b" d="M.4 2.8c-.2-.5 0-1 .5-1h3s1 .5 1 1c0 .6-1 1-1 1H1L0 2.4l.2.5z" />
+        <mask id="k" width="4.8" height="2" x="0" y="0" fill="#fff">
+            <use xlink:href="#b" />
+        </mask>
+        <rect id="c" width="7" height="2" x="1" y="3" rx="1" />
+        <mask id="l" width="7" height="2" x="0" y="0" fill="#fff">
+            <use xlink:href="#c" />
+        </mask>
+        <path id="d" d="M.6 4.5L.4 4V3l2 2H1l-.4-.5z" />
+        <mask id="m" width="2" height="2.1" x="0" y="0" fill="#fff">
+            <use xlink:href="#d" />
+        </mask>
+        <path id="e" d="M.4 5C.2 4.3.4 4 1 4h3c.5 0 1 .5 1 1 0 .6-.5 1-1 1H1L0 4.6l.2.4z" />
+        <mask id="n" width="4.8" height="2" x="0" y="0" fill="#fff">
+            <use xlink:href="#e" />
+        </mask>
+        <path id="f" d="M.4 2.8c-.2-.5 0-1 .5-1h3s1 .5 1 1c0 .6-1 1-1 1H1L0 2.4l.2.5z" />
+        <mask id="o" width="4.8" height="2" x="0" y="0" fill="#fff">
+            <use xlink:href="#f" />
+        </mask>
+        <rect id="g" width="7" height="2" x="1" y="3" rx="1" />
+        <mask id="p" width="7" height="2" x="0" y="0" fill="#fff">
+            <use xlink:href="#g" />
+        </mask>
+        <path id="h" d="M.6 4.5L.4 4V3l2 2H1l-.4-.5z" />
+        <mask id="q" width="2" height="2.1" x="0" y="0" fill="#fff">
+            <use xlink:href="#h" />
+        </mask>
+        <circle id="r" cx="3" cy="3" r="3" />
+        <filter id="s" width="200%" height="200%" x="-50%" y="-50%" filterUnits="objectBoundingBox">
+            <feGaussianBlur stdDeviation=".5" in="SourceAlpha" result="shadowBlurInner1" />
+            <feOffset in="shadowBlurInner1" result="shadowOffsetInner1" />
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1" />
+            <feColorMatrix values="0 0 0 0 0.878431373 0 0 0 0 0.266666667 0 0 0 0 0.243137255 0 0 0 1 0" in="shadowInnerInner1" />
+        </filter>
+        <circle id="t" cx="13" cy="3" r="3" />
+        <filter id="u" width="200%" height="200%" x="-50%" y="-50%" filterUnits="objectBoundingBox">
+            <feGaussianBlur stdDeviation=".5" in="SourceAlpha" result="shadowBlurInner1" />
+            <feOffset in="shadowBlurInner1" result="shadowOffsetInner1" />
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1" />
+            <feColorMatrix values="0 0 0 0 0.874509804 0 0 0 0 0.623529412 0 0 0 0 0.133333333 0 0 0 1 0" in="shadowInnerInner1" />
+        </filter>
+        <circle id="v" cx="23" cy="3" r="3" />
+        <filter id="w" width="200%" height="200%" x="-50%" y="-50%" filterUnits="objectBoundingBox">
+            <feGaussianBlur stdDeviation=".5" in="SourceAlpha" result="shadowBlurInner1" />
+            <feOffset in="shadowBlurInner1" result="shadowOffsetInner1" />
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1" />
+            <feColorMatrix values="0 0 0 0 0.101960784 0 0 0 0 0.670588235 0 0 0 0 0.168627451 0 0 0 1 0" in="shadowInnerInner1" />
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path fill="url(#i)" d="M0 12c1 0 1.8-1 2-2l2.6-8C5 1 6 0 7.2 0h65.6c1 0 2.2 1 2.6 2l2.5 8c0 1 1 2 2 2H0z" transform="translate(-45.000000, -46.000000) translate(40.000000, 40.000000) translate(5.000000, 6.000000) translate(30.000000, 0.000000)" />
+        <path stroke="#4C4C4B" d="M98.8 5.8l1.2-1.3-1.3 1.3-1.2-1.3 1.3 1.3zm0 0L97.5 7l1.3-1.3L100 7l-1-1z" stroke-linecap="square" />
+        <g transform="translate(-45.000000, -46.000000) translate(40.000000, 40.000000) translate(5.000000, 6.000000) translate(59.000000, 18.000000)">
+            <circle cx="2" cy="2" r="2" stroke="#828282" />
+            <rect width="1" height="3" x="4.3" y="3.3" fill="#828282" transform="translate(4.814215, 4.814215) rotate(-45.000000) translate(-4.814215, -4.814215)" rx=".5" />
+        </g>
+        <path fill="#6E6D6E" d="M46.5 18l3 3h-6m.5 0h5v3h-5v-3zm2 .5c0-.3.2-.5.5-.5s.5.2.5.5V24h-1v-2.5zm1.5-3.5h1v1.5l-1-1" />
+        <g fill="#6E6D6E">
+            <path d="M33 22c-.5.3-1 .5-1.5.5-1 0-2-1-2-2s1-2 2-2 2 1 2 2H35c0-2-1.6-3.5-3.5-3.5-2 0-3.5 1.6-3.5 3.5 0 2 1.6 3.5 3.5 3.5 1 0 2-.4 2.5-1l.2-.6c0-.4-.3-.7-.7-.7H33v.3z" />
+            <path d="M35 17.5v3h-3" />
+        </g>
+        <g fill="#D1D2CF" stroke="#D0CFD1" stroke-width="2" transform="translate(-45.000000, -46.000000) translate(40.000000, 40.000000) translate(5.000000, 6.000000) translate(18.000000, 21.000000) scale(-1, 1) translate(-18.000000, -21.000000) translate(14.000000, 17.000000)">
+            <use mask="url(#j)" transform="translate(2.553975, 5.053975) rotate(-315.000000) translate(-2.553975, -5.053975)" xlink:href="#a" />
+            <use mask="url(#k)" transform="translate(2.553975, 2.895772) scale(1, -1) rotate(-315.000000) translate(-2.553975, -2.895772)" xlink:href="#b" />
+            <use mask="url(#l)" xlink:href="#c" />
+            <use mask="url(#m)" transform="translate(1.469263, 3.985017) rotate(-315.000000) translate(-1.469263, -3.985017)" xlink:href="#d" />
+        </g>
+        <g fill="#D1D2CF" stroke="#D0CFD1" stroke-width="2" transform="translate(-45.000000, -46.000000) translate(40.000000, 40.000000) translate(5.000000, 6.000000) translate(0.000000, 17.000000)">
+            <use mask="url(#n)" transform="translate(2.553975, 5.053975) rotate(-315.000000) translate(-2.553975, -5.053975)" xlink:href="#e" />
+            <use mask="url(#o)" transform="translate(2.553975, 2.895772) scale(1, -1) rotate(-315.000000) translate(-2.553975, -2.895772)" xlink:href="#f" />
+            <use mask="url(#p)" xlink:href="#g" />
+            <use mask="url(#q)" transform="translate(1.469263, 3.985017) rotate(-315.000000) translate(-1.469263, -3.985017)" xlink:href="#h" />
+        </g>
+        <g transform="translate(-45.000000, -46.000000) translate(40.000000, 40.000000) translate(5.000000, 6.000000) translate(1.000000, 0.000000)">
+            <use fill="#FF6059" xlink:href="#r" />
+            <use fill="#000" filter="url(#s)" xlink:href="#r" />
+        </g>
+        <g transform="translate(-45.000000, -46.000000) translate(40.000000, 40.000000) translate(5.000000, 6.000000) translate(1.000000, 0.000000)">
+            <use fill="#FFC02F" xlink:href="#t" />
+            <use fill="#000" filter="url(#u)" xlink:href="#t" />
+        </g>
+        <g transform="translate(-45.000000, -46.000000) translate(40.000000, 40.000000) translate(5.000000, 6.000000) translate(1.000000, 0.000000)">
+            <use fill="#28CA42" xlink:href="#v" />
+            <use fill="#000" filter="url(#w)" xlink:href="#v" />
+        </g>
+    </g>
+</svg>
