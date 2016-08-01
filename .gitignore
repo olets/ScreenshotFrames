@@ -1,3 +1,4 @@
 node_modules
 gitignore
-compiled
+temp
+screenshot-frames-custom.min.css
