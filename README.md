@@ -23,7 +23,7 @@ The `.screenshot-frame` must be 100% wide, can't have padding, and can't have an
 
 If you don't need support for all of these, use the light weight *screenshot-frames-basics.min.css* which only includes support for Safari, iPad, and iPhone.
 
-You can also build your own custom set of frames (requires node): clone or download the repo, comment out parts of *src/screenshot-frames.less* as necessary, `cd` to the main local ScreenshotFrames directory, run `npm install` (may require `sudo npm install` depending on your setup), and then run `gulp screenshot-frames:custom` to generate *screenshot-frames-custom.min.css*.
+You can also build your own custom set of frames (requires node): clone or download the repo, comment out parts of *src/screenshot-frames-custom.less* as necessary, `cd` to the main local ScreenshotFrames directory, run `npm install` (may require `sudo npm install` depending on your setup), and then run `gulp screenshot-frames:custom` to generate *screenshot-frames-custom.min.css*.
 
 #### Browsers
 

@@ -1,0 +1,48 @@
+/*! ScreenshotFrames
+
+    v1.4.1 - 2016-07-31
+   
+    https://github.com/olets/ScreenshotFrames
+    Copyright (c) 2016 Henry Bley-Vroman (@olets)
+    MIT License
+
+ */
+
+@import 'screenshot-frames-mixins';
+
+/* EVERY frame gets listed here */
+.screenshot-chrome,
+.screenshot-macbook,
+.screenshot-mac,
+.screenshot-pc,
+.screenshot-safari,// from here on are available in Basics
+.screenshot-ipad,
+.screenshot-iphone {
+    .screenshot-frame
+}
+
+/* every window-type frame gets listed here too */
+.screenshot-chrome,
+.screenshot-safari /* from here on are available in Basics */ {
+    .screenshot-frame-window
+}
+
+/* every device-type frame gets listed here */
+.screenshot-macbook,
+.screenshot-mac,
+.screenshot-pc,
+.screenshot-ipad,// from here on are available in Basics
+.screenshot-iphone {
+    .screenshot-frame-device
+}
+
+/* EVERY frame stylesheet gets listed here */
+/* available in Basics */
+@import 'screenshot-frame-safari';
+@import 'screenshot-frame-ipad';
+@import 'screenshot-frame-iphone';
+/* not available in Basics */
+@import 'screenshot-frame-chrome';
+@import 'screenshot-frame-macbook';
+@import 'screenshot-frame-mac';
+@import 'screenshot-frame-pc';
