@@ -57,7 +57,6 @@ gulp.task('screenshot-frames:compile:custom', /* ['screenshot-frames:compile:fra
 });
 
 gulp.task('screenshot-frames:compile', /* ['screenshot-frames:compile:frames'],*/ function() {
-    del('./compiled/screenshot-frames-custom.less');
     gulp.src(['./src/banner.css', './src/screenshot-frames-mixins.less', './src/screenshot-frames-basics.less'])
         .pipe(concat('screenshot-frames-basics.less'))
         .pipe(gulp.dest('./compiled'));
@@ -67,7 +66,7 @@ gulp.task('screenshot-frames:compile', /* ['screenshot-frames:compile:frames'],*
 });
 
 gulp.task('screenshot-frames:minify', function() {
-    gulp.src(['./compiled/*.less'])
+    return gulp.src(['./compiled/*.less'])
         .pipe(plumber({
             errorHandler: function(error) {
                 console.log(error.message);
@@ -82,22 +81,22 @@ gulp.task('screenshot-frames:minify', function() {
         .pipe(gulp.dest("."))
 });
 
-gulp.task('clean', function() {
+gulp.task('clean:compiled', function() {
     del('./compiled')
 });
 gulp.task('clean:minified', function() {
     del(['./*.min.css'])
 })
-gulp.task('clean:all', ['clean:minified', 'clean']);
+gulp.task('clean:all', ['clean:minified', 'clean:compiled']);
 
 gulp.task('config', ['screenshot-frames:compile:frames']);
 // not actually a configuration task - it's the first half of the compilation task, which currently kills the stream.
 // calling it "config" is a white lie designed to 1) be memorable, 2) sound necessary (which it is)
 
 gulp.task('build:custom', function() {
-    runSequence('screenshot-frames:compile:custom', 'screenshot-frames:minify')
+    runSequence('screenshot-frames:compile:custom', 'screenshot-frames:minify', 'clean:compiled')
 });
 
 gulp.task('build', function() {
-    runSequence('screenshot-frames:compile', 'screenshot-frames:minify')
+    runSequence('screenshot-frames:compile', 'screenshot-frames:minify', 'clean:compiled')
 });
