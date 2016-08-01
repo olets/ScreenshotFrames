@@ -97,7 +97,7 @@ PRs are welcome. For each new frame
 - add a demo to *demo/demo.html*
 - if appropriate, credit the illustrator in the *README.md*'s "Acknowledgments"
 
-Test by running `gulp screenshot-frames:prepare` followed by `gulp screenshot-frames:prepare`
+Compile by running `gulp screenshot-frames:prepare` followed by `gulp screenshot-frames:build`
 
 &nbsp;
 	
