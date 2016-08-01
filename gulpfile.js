@@ -77,7 +77,7 @@ gulp.task('screenshot-frames:compile', /* ['screenshot-frames:compile:frames'],*
         .pipe(concat('screenshot-frames-basics.less'))
         .pipe(gulp.dest('./temp'));
     // merge the banner, mixins, basic stylesheet, and additional stylesheet, and save
-    return gulp.src(['./src/banner.css', './src/screenshot-frames-mixins.less', './src/screenshot-frames-basics.less', './src/screenshot-frames-additional.less', './src/screenshot-frames-mixins.less'])
+    return gulp.src(['./src/banner.css', './src/screenshot-frames-mixins.less', './src/screenshot-frames-basics.less', './src/screenshot-frames-additional.less'])
         .pipe(concat('screenshot-frames.less'))
         .pipe(gulp.dest('./temp'))
 });
