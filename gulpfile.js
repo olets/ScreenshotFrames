@@ -47,17 +47,17 @@ gulp.task('screenshot-frames:compile:frames', function(file) {
 });
 
 gulp.task('screenshot-frames:compile:custom', /* ['screenshot-frames:compile:frames'],*/ function() {
-    return gulp.src(['./src/screenshot-frames-mixins.less', './src/screenshot-frames-custom.less'])
+    return gulp.src(['./src/banner.css', './src/screenshot-frames-mixins.less', './src/screenshot-frames-custom.less'])
         .pipe(concat('screenshot-frames-custom.less'))
         .pipe(gulp.dest('./compiled'))
 });
 
 gulp.task('screenshot-frames:compile', /* ['screenshot-frames:compile:frames'],*/ function() {
     del('./compiled/screenshot-frames-custom.less');
-    gulp.src(['./src/screenshot-frames-mixins.less', './src/screenshot-frames-basics.less'])
+    gulp.src(['./src/banner.css', './src/screenshot-frames-mixins.less', './src/screenshot-frames-basics.less'])
         .pipe(concat('screenshot-frames-basics.less'))
         .pipe(gulp.dest('./compiled'));
-    return gulp.src(['./src/screenshot-frames-mixins.less', './src/screenshot-frames-basics.less', './src/screenshot-frames-additional.less', './src/screenshot-frames-mixins.less'])
+    return gulp.src(['./src/banner.css', './src/screenshot-frames-mixins.less', './src/screenshot-frames-basics.less', './src/screenshot-frames-additional.less', './src/screenshot-frames-mixins.less'])
         .pipe(concat('screenshot-frames.less'))
         .pipe(gulp.dest('./compiled'))
 });
