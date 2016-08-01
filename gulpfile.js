@@ -31,8 +31,8 @@ gulp.task('screenshot-frames:prep:svg', function(file) {
     folders.map(function(folder) {
         return gulp.src('./src/' + folder + '/*.less')
             .pipe(inject(gulp.src('./src/' + folder + '/*.svg'), {
-                starttag: '/* inject:svg_bg_img */background-image: url(\'data:image/svg+xml;utf8,',
-                endtag: '\');/* endinject */',
+                starttag: '/* inject:svg_bg_img */',
+                removeTags: true,
                 transform: function(filePath, file) {
                     return file.contents.toString('utf8')
                 }
