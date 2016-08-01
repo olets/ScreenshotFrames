@@ -9,13 +9,13 @@ ScreenshotFrames adds attractive browser and device frames around your screensho
 
 Using ScreenshotFrames is extremely simple: add [screenshot-frames.min.css](https://github.com/olets/ScreenshotFrames/blob/master/screenshot-frames.min.css) (or [screenshot-frames-basics.min.css](https://github.com/olets/ScreenshotFrames/blob/master/screenshot-frames-basics.min.css)), and then wrap the image with the appropriate class like
 
-	<div class="screenshot-frame">
+	<div class="screenshot-framename">
 		<img ... />
 	</div>
 
 #### Restrictions
 
-The `.screenshot-frame` must be 100% wide, can't have padding, and can't have any margins other than margin-bottom. Use a wrapping container to control width and margins as necessary.	
+The `.screenshot-framename` must be 100% wide, can't have padding, and can't have any margins other than margin-bottom. Use a wrapping container to control width and margins as necessary.	
 
 &nbsp;
 
@@ -83,6 +83,7 @@ use `.screenshot-iphone`
 - some Android
 	- w/ Chrome For Mobile
 - Firefox
+- OSX window
 
 &nbsp;
 
@@ -90,10 +91,11 @@ use `.screenshot-iphone`
 PRs are welcome. For each new frame
 
 - add the stylesheet *src/framename/screenshot-frame-framename.less*
-	- for base64 encoded background images (cf. [screenshot-frame-safari.less](https://github.com/olets/ScreenshotFrames/blob/master/src/safari/screenshot-frame-safari.less)), use  
+	- for base64 encoded background images (cf. [Safari frame](https://github.com/olets/ScreenshotFrames/blob/master/src/safari/screenshot-frame-safari.less)), use  
 `background-image: url(filepathrelativetostylesheet)` (supports png and jpg)
-	- for svg background images (cf. [screenshot-frame-iphone.less](https://github.com/olets/ScreenshotFrames/blob/master/src/iphone/screenshot-frame-iphone.less)), use  
+	- for svg background images (cf. [iPhone frame](https://github.com/olets/ScreenshotFrames/blob/master/src/iphone/screenshot-frame-iphone.less)), use  
 `background-image: url('data:image/svg+xml;utf8,/* svg \*//* endinject */')`
+	- for mobile and desktop frames, use svg; for browser frames, use whichever is lighter
 		
 - add relevant images and/or svgs to *src/framename*
 - in *src/screenshot-frames-additional.less* and *src/screenshot-frames-custom.less*
