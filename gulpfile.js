@@ -40,7 +40,7 @@ gulp.task('screenshot-frames:compile:frames', function(file) {
                 extensions: ['jpg', 'png']
             }))
             .pipe(inject(gulp.src('./src/' + folder + '/*.svg'), {
-                starttag: '/* inject:svg_bg_img */',
+                starttag: '/* inject:svg */',
                 removeTags: true,
                 transform: function(filePath, file) {
                     return file.contents.toString('utf8')
