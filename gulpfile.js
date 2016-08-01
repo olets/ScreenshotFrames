@@ -1,10 +1,12 @@
 /* to build, run
 
-        gulp prepare
+        gulp config
 
     and then
 
         gulp build
+        or
+        gulp build:custom
 */
 
 // node
@@ -13,7 +15,8 @@ const fs = require('fs'),
 // npm
 const del = require('del'),
     gulp = require('gulp'),
-    cleancss = require('gulp-clean-css'),
+    cleanCss = require('gulp-clean-css'),
+    concat = require('gulp-concat'),
     inject = require('gulp-inject'),
     less = require('gulp-less'),
     plumber = require('gulp-plumber'),
@@ -27,8 +30,10 @@ function getFolders(dir) {
         });
 }
 var folders = getFolders('./src');
-gulp.task('screenshot-frames:prep:svg', function(file) {
-    folders.map(function(folder) {
+
+gulp.task('screenshot-frames:compile:frames', function(file) {
+    del('./compiled/frames/*');
+    return folders.map(function(folder) {
         return gulp.src('./src/' + folder + '/*.less')
             .pipe(inject(gulp.src('./src/' + folder + '/*.svg'), {
                 starttag: '/* inject:svg_bg_img */',
@@ -37,12 +42,28 @@ gulp.task('screenshot-frames:prep:svg', function(file) {
                     return file.contents.toString('utf8')
                 }
             }))
-            .pipe(gulp.dest('./compiled'))
+            .pipe(gulp.dest('./compiled/frames'))
     });
 });
 
-gulp.task('screenshot-frames:build:custom', function() {
-    gulp.src(['./compiled/screenshot-frames-custom.less'])
+gulp.task('screenshot-frames:compile:custom', /* ['screenshot-frames:compile:frames'],*/ function() {
+    return gulp.src(['./src/screenshot-frames-mixins.less', './src/screenshot-frames-custom.less'])
+        .pipe(concat('screenshot-frames-custom.less'))
+        .pipe(gulp.dest('./compiled'))
+});
+
+gulp.task('screenshot-frames:compile', /* ['screenshot-frames:compile:frames'],*/ function() {
+    del('./compiled/screenshot-frames-custom.less');
+    gulp.src(['./src/screenshot-frames-mixins.less', './src/screenshot-frames-basics.less'])
+        .pipe(concat('screenshot-frames-basics.less'))
+        .pipe(gulp.dest('./compiled'));
+    return gulp.src(['./src/screenshot-frames-mixins.less', './src/screenshot-frames-basics.less', './src/screenshot-frames-additional.less', './src/screenshot-frames-mixins.less'])
+        .pipe(concat('screenshot-frames.less'))
+        .pipe(gulp.dest('./compiled'))
+});
+
+gulp.task('screenshot-frames:minify', function() {
+    gulp.src(['./compiled/*.less'])
         .pipe(plumber({
             errorHandler: function(error) {
                 console.log(error.message);
@@ -50,60 +71,29 @@ gulp.task('screenshot-frames:build:custom', function() {
             }
         }))
         .pipe(less())
-        .pipe(rename("screenshot-frames-custom.min.css"))
-        .pipe(cleancss({
+        .pipe(rename({ extname: ".min.css" }))
+        .pipe(cleanCss({
             keepSpecialComments: 1
         }))
         .pipe(gulp.dest("."))
 });
 
-gulp.task('screenshot-frames:build:basics', function() {
-    return gulp.src(['./compiled/screenshot-frames-basics.less'])
-        .pipe(plumber({
-            errorHandler: function(error) {
-                console.log(error.message);
-                this.emit('end');
-            }
-        }))
-        .pipe(less())
-        .pipe(rename("screenshot-frames-basics.min.css"))
-        .pipe(cleancss({
-            keepSpecialComments: 1
-        }))
-        .pipe(gulp.dest("./"))
-});
-
-gulp.task('screenshot-frames:build:full', function() {
-    return gulp.src(['./compiled/screenshot-frames.less'])
-        .pipe(plumber({
-            errorHandler: function(error) {
-                console.log(error.message);
-                this.emit('end');
-            }
-        }))
-        .pipe(less())
-        .pipe(rename("screenshot-frames.min.css"))
-        .pipe(cleancss({
-            keepSpecialComments: 1
-        }))
-        .pipe(gulp.dest("./"));
-});
-
-gulp.task('screenshot-frames:prep', /* ['screenshot-frames:prep:svg'],*/ function() {
-    return gulp.src('./src/*.less')
-        .pipe(gulp.dest("./compiled"))
-});
-
-gulp.task('screenshot-frames:clean', function() {
+gulp.task('clean', function() {
     del('./compiled')
 });
+gulp.task('clean:minified', function() {
+    del(['./*.min.css'])
+})
+gulp.task('clean:all', ['clean:minified', 'clean']);
 
-gulp.task('screenshot-frames:custom', function() {
-    runSequence('screenshot-frames:prep', 'screenshot-frames:build:custom', 'screenshot-frames:clean')
+gulp.task('config', ['screenshot-frames:compile:frames']);
+// not actually a configuration task - it's the first half of the compilation task, which currently kills the stream.
+// calling it "config" is a white lie designed to 1) be memorable, 2) sound necessary (which it is)
+
+gulp.task('build:custom', function() {
+    runSequence('screenshot-frames:compile:custom', 'screenshot-frames:minify')
 });
 
-gulp.task('screenshot-frames:prepare', ['screenshot-frames:prep:svg']); // ideally this wouldn't be necessary, because it would be wrapped into screenshot-frames:prep
-
-gulp.task( /* 'screenshot-frames' */ 'screenshot-frames:build', function() {
-    runSequence('screenshot-frames:prep', 'screenshot-frames:build:full', 'screenshot-frames:build:basics', 'screenshot-frames:clean')
+gulp.task('build', function() {
+    runSequence('screenshot-frames:compile', 'screenshot-frames:minify')
 });

@@ -14,34 +14,23 @@
 .screenshot-chrome,
 .screenshot-macbook,
 .screenshot-mac,
-.screenshot-pc,
-.screenshot-safari,// from here on are available in Basics
-.screenshot-ipad,
-.screenshot-iphone {
+.screenshot-pc {
     .screenshot-frame
 }
 
 /* every window-type frame gets listed here too */
-.screenshot-chrome,
-.screenshot-safari /* from here on are available in Basics */ {
+.screenshot-chrome {
     .screenshot-frame-window
 }
 
 /* every device-type frame gets listed here */
 .screenshot-macbook,
 .screenshot-mac,
-.screenshot-pc,
-.screenshot-ipad,// from here on are available in Basics
-.screenshot-iphone {
+.screenshot-pc {
     .screenshot-frame-device
 }
 
 /* EVERY frame stylesheet gets listed here */
-/* available in Basics */
-@import 'frames/screenshot-frame-safari';
-@import 'frames/screenshot-frame-ipad';
-@import 'frames/screenshot-frame-iphone';
-/* not available in Basics */
 @import 'frames/screenshot-frame-chrome';
 @import 'frames/screenshot-frame-macbook';
 @import 'frames/screenshot-frame-mac';

@@ -8,41 +8,27 @@
 
  */
 
-@import 'screenshot-frames-mixins';
+// 'screenshot-frames-mixins' will be imported via gulp
 
 /* EVERY frame gets listed here */
-// .screenshot-chrome,
-// .screenshot-macbook,
-// .screenshot-mac,
-// .screenshot-pc,
-.screenshot-safari,// from here on are available in Basics branch
+.screenshot-safari,
 .screenshot-ipad,
 .screenshot-iphone {
     .screenshot-frame
 }
 
 /* every window-type frame gets listed here too */
-// .screenshot-chrome,
-.screenshot-safari /* from here on are available in Basics branch */ {
+.screenshot-safari {
     .screenshot-frame-window
 }
 
 /* every device-type frame gets listed here */
-// .screenshot-macbook,
-// .screenshot-mac,
-// .screenshot-pc,
-.screenshot-ipad,// from here on are available in Basics branch
+.screenshot-ipad,
 .screenshot-iphone {
     .screenshot-frame-device
 }
 
 /* EVERY frame stylesheet gets listed here */
-/* available in Basics branch */
-@import 'screenshot-frame-safari';
-@import 'screenshot-frame-ipad';
-@import 'screenshot-frame-iphone';
-/* not available in Basics branch */
-// @import 'screenshot-frame-chrome';
-// @import 'screenshot-frame-macbook';
-// @import 'screenshot-frame-mac';
-// @import 'screenshot-frame-pc';
+@import 'frames/screenshot-frame-safari';
+@import 'frames/screenshot-frame-ipad';
+@import 'frames/screenshot-frame-iphone';
