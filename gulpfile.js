@@ -15,6 +15,7 @@ const fs = require('fs'),
 // npm
 const del = require('del'),
     gulp = require('gulp'),
+    base64 = require('gulp-base64'),
     cleanCss = require('gulp-clean-css'),
     concat = require('gulp-concat'),
     inject = require('gulp-inject'),
@@ -35,6 +36,9 @@ gulp.task('screenshot-frames:compile:frames', function(file) {
     del('./compiled/frames/*');
     return folders.map(function(folder) {
         return gulp.src('./src/' + folder + '/*.less')
+            .pipe(base64({
+                extensions: ['jpg', 'png']
+            }))
             .pipe(inject(gulp.src('./src/' + folder + '/*.svg'), {
                 starttag: '/* inject:svg_bg_img */',
                 removeTags: true,
