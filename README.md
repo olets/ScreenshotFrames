@@ -21,9 +21,9 @@ The `.screenshot-frame` must be 100% wide, can't have padding, and can't have an
 
 ## Available Frames
 
-If you don't need support for all of these, use the light weight *screenshot-frames-basics.min.css* which only includes support for Safari, iPad, and iPhone.
+These are the frames supported in *screenshot-frames.min.css*. If you don't need support for all of these, use the lightweight *screenshot-frames-basics.min.css* which only includes support for Safari, iPad, and iPhone.
 
-You can also build your own custom set of frames (requires node): clone or download the repo, comment out parts of *src/screenshot-frames-custom.less* as necessary, `cd` to the main local ScreenshotFrames directory, run `npm install` (may require `sudo npm install` depending on your setup), and then run `gulp screenshot-frames:custom` to generate *screenshot-frames-custom.min.css*.
+You can also build your own custom set of frames (requires node): clone or download the repo, edit *src/screenshot-frames-custom.less* as necessary, `cd` to the main local ScreenshotFrames directory, run `npm install` (may require `sudo npm install` depending on your setup), and then run `gulp build:custom` to generate *screenshot-frames-custom.min.css*.
 
 #### Browsers
 
@@ -90,14 +90,19 @@ use `.screenshot-iphone`
 PRs are welcome. For each new frame
 
 - add the stylesheet *src/framename/screenshot-frame-framename.less*
-- if relevant, add the svg *src/framename/framename.svg*
-- in *src/screenshot-frames.less* and *src/screenshot-frames-basics.less*:
+	- for base64 encoded background images (cf. [screenshot-frame-safari.less](https://github.com/olets/ScreenshotFrames/blob/master/src/safari/screenshot-frame-safari.less)), use  
+`background-image: url(filepathrelativetostylesheet)` (supports png and jpg)
+	- for svg background images (cf. [screenshot-frame-iphone.less](https://github.com/olets/ScreenshotFrames/blob/master/src/iphone/screenshot-frame-iphone.less)), use  
+`background-image: url('data:image/svg+xml;utf8,/* svg \*//* endinject */')`
+		
+- add relevant images and/or svgs to *src/framename*
+- in *src/screenshot-frames-additional.less* and *src/screenshot-frames-custom.less*
 	- add the frame class where appropriate
 	- import the stylesheet
 - add a demo to *demo/demo.html*
 - if appropriate, credit the illustrator in the *README.md*'s "Acknowledgments"
 
-Compile by running `gulp screenshot-frames:prepare` followed by `gulp screenshot-frames:build`
+Compile with `gulp config` then `gulp build`.
 
 &nbsp;
 	
