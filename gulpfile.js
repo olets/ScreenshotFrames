@@ -38,7 +38,7 @@ var folders = getFolders('./src');
 // get the svgs and images into the frames' stylesheets
 gulp.task('screenshot-frames:compile:frames', function(file) {
     // start fresh
-    del('./compiled/frames/*');
+    del('./temp/frames/*');
     // for every frame directory
     return folders.map(function(folder) {
         // get the child less file (will match multiple, but there should always be only one)
@@ -56,7 +56,7 @@ gulp.task('screenshot-frames:compile:frames', function(file) {
                 }
             }))
             // save
-            .pipe(gulp.dest('./compiled/frames'))
+            .pipe(gulp.dest('./temp/frames'))
     });
 });
 
@@ -66,7 +66,7 @@ gulp.task('screenshot-frames:compile:custom', /* ['screenshot-frames:compile:fra
     // merge the banner, mixins, and custom stylesheet, and save
     return gulp.src(['./src/banner.css', './src/screenshot-frames-mixins.less', './src/screenshot-frames-custom.less'])
         .pipe(concat('screenshot-frames-custom.less'))
-        .pipe(gulp.dest('./compiled'))
+        .pipe(gulp.dest('./temp'))
 });
 
 // make the basic and full stylesheets
@@ -75,17 +75,17 @@ gulp.task('screenshot-frames:compile', /* ['screenshot-frames:compile:frames'],*
     // merge the banner, mixins, and basic stylesheet, and save
     gulp.src(['./src/banner.css', './src/screenshot-frames-mixins.less', './src/screenshot-frames-basics.less'])
         .pipe(concat('screenshot-frames-basics.less'))
-        .pipe(gulp.dest('./compiled'));
+        .pipe(gulp.dest('./temp'));
     // merge the banner, mixins, basic stylesheet, and additional stylesheet, and save
     return gulp.src(['./src/banner.css', './src/screenshot-frames-mixins.less', './src/screenshot-frames-basics.less', './src/screenshot-frames-additional.less', './src/screenshot-frames-mixins.less'])
         .pipe(concat('screenshot-frames.less'))
-        .pipe(gulp.dest('./compiled'))
+        .pipe(gulp.dest('./temp'))
 });
 
 // make the final minified stylesheets
 gulp.task('screenshot-frames:minify', function() {
     // for each of the main stylesheets
-    return gulp.src(['./compiled/*.less'])
+    return gulp.src(['./temp/*.less'])
         // report any CSS/LESS errors
         .pipe(plumber({
             errorHandler: function(error) {
@@ -104,14 +104,14 @@ gulp.task('screenshot-frames:minify', function() {
         .pipe(gulp.dest("."))
 });
 
-gulp.task('clean:compiled', function() {
-    del('./compiled')
+gulp.task('clean:temp', function() {
+    del('./temp')
 });
 // dev tasks
 gulp.task('clean:minified', function() {
     del(['./*.min.css'])
 })
-gulp.task('clean', ['clean:minified', 'clean:compiled']);
+gulp.task('clean', ['clean:minified', 'clean:temp']);
 
 
 // main tasks
@@ -121,9 +121,9 @@ gulp.task('config', ['screenshot-frames:compile:frames']);
 // calling it "config" is a white lie designed to 1) be memorable, 2) sound necessary (which it is)
 
 gulp.task('build:custom', function() {
-    runSequence('screenshot-frames:compile:custom', 'screenshot-frames:minify', 'clean:compiled')
+    runSequence('screenshot-frames:compile:custom', 'screenshot-frames:minify', 'clean:temp')
 });
 
 gulp.task('build', function() {
-    runSequence('screenshot-frames:compile', 'screenshot-frames:minify', 'clean:compiled')
+    runSequence('screenshot-frames:compile', 'screenshot-frames:minify', 'clean:temp')
 });
