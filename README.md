@@ -1,21 +1,23 @@
 # ScreenshotFrames
 v1.5.2
 
-ScreenshotFrames adds attractive browser and device frames around your screenshots!
+ScreenshotFrames is a small CSS library that lets you add responsive browser and device frames around images (screenshots, for example) on a webpage.
 
 **[Check out the demo pen!](http://codepen.io/henry/pen/NAYbNd?editors=1100)**
 
 &nbsp;
 
-Using ScreenshotFrames is extremely simple: add [screenshot-frames.min.css](https://github.com/olets/ScreenshotFrames/blob/master/screenshot-frames.min.css) (or [screenshot-frames-basics.min.css](https://github.com/olets/ScreenshotFrames/blob/master/screenshot-frames-basics.min.css)), and then wrap the image with the appropriate class like
+Using ScreenshotFrames is extremely simple: add the stylesheet [screenshot-frames.min.css](https://github.com/olets/ScreenshotFrames/blob/master/screenshot-frames.min.css) (or [screenshot-frames-basics.min.css](https://github.com/olets/ScreenshotFrames/blob/master/screenshot-frames-basics.min.css)) to page, and then in the markup wrap the image with screenshot frame class like
 
 	<div class="screenshot-framename">
 		<img ... />
 	</div>
 
+where "framename" is descriptive of the frame (e.g. `.screenshot-ipad`).	
+
 #### Restrictions
 
-The `.screenshot-framename` must be 100% wide, can't have padding, and can't have any margins other than margin-bottom. Use a wrapping container to control width and margins as necessary.	
+The `.screenshot-framename` must be 100% wide, can't have padding, and can't have any margins other than `margin-bottom`. Use a wrapping container to control width and margins as necessary.	
 
 &nbsp;
 
@@ -23,9 +25,11 @@ The `.screenshot-framename` must be 100% wide, can't have padding, and can't hav
 
 These are the frames supported in *screenshot-frames.min.css*.
 
-If you don't them all, use the lightweight *screenshot-frames-basics.min.css* which only includes support for Safari, iPad, and iPhone.
+If you don't need them all, consider using the lighter-weight *screenshot-frames-basics.min.css*, which only includes support for Safari&reg;, iPad Air&reg;, and iPhone&reg;.
 
 You can also build your own custom set of frames (requires node): clone or download the repo, edit *src/screenshot-frames-custom.less* as necessary, and then in the ScreenshotFrames directory run `npm install` (may require `sudo npm install` depending on your setup) and `gulp build:custom`.
+
+All frames are responsive. Responsive graphic elements are svg's (e.g. device frames) or straight CSS (e.g. browser titlebar backgrounds are borders), so they'll be crisp at any size.
 
 #### Browsers
 
@@ -34,24 +38,24 @@ use `.screenshot-safari`
 *image aspect ratio doesn't matter; container should be ≥ 310px wide*  
 <img src="https://raw.githubusercontent.com/olets/ScreenshotFrames/master/images/safari.png" width="400">
 
-- Chrome  
+- Chrome&trade;  
 use `.screenshot-chrome`  
 *image aspect ratio doesn't matter; container should be ≥ 220px wide*  
 <img src="https://raw.githubusercontent.com/olets/ScreenshotFrames/master/images/chrome.png" width="400">
 
 #### Desktop
 
-- MacBook  
+- MacBook&reg;  
 use `.screenshot-macbook`  
 *takes image with aspect ratio 393:245*  
 <img src="https://raw.githubusercontent.com/olets/ScreenshotFrames/master/images/macbook.png" width="400">
 
-- Mac monitor  
+- Mac&reg; monitor (Thunderbolt display)  
 use `.screenshot-mac`  
 *takes image with aspect ratio 16:9*  
 <img src="https://raw.githubusercontent.com/olets/ScreenshotFrames/master/images/mac.png" width="400">
 
-- PC monitor  
+- PC monitor (Dell&trade; Ultrasharp display)  
 use `.screenshot-pc`  
 *takes image with aspect ratio 16:9*  
 <img src="https://raw.githubusercontent.com/olets/ScreenshotFrames/master/images/pc.png" width="400">
@@ -82,10 +86,10 @@ use `.screenshot-iphone`
 - ~~MacBook~~
 - ~~Mac desktop~~
 - ~~PC desktop~~
-- some Android
+- some Android&trade;
 	- w/ Chrome For Mobile
-- Firefox
-- OSX window
+- Firefox&reg;
+- OS X&reg; window
 
 &nbsp;
 
@@ -106,7 +110,10 @@ PRs are welcome. For each new frame
 - add a demo to *demo/demo.html*
 - if appropriate, credit the illustrator in the *README.md*'s "Acknowledgments"
 
-Compile with `gulp config` then `gulp build`.
+Compile with
+
+	$ gulp config
+	$ gulp build
 
 &nbsp;
 	
@@ -119,3 +126,8 @@ Compile with `gulp config` then `gulp build`.
 - MacBook forked from [Peter Hol's "Apple devices Sketch file"](https://dribbble.com/shots/1663223-Apple-devices-Sketch-file)
 - PC desktop forked from [Facebook Design's "Dell Ultrasharp Monitor"](http://facebook.design/devices)
 - Safari forked from [Ed Piel's "Safari UI Template for Sketch"](https://dribbble.com/shots/1995751-Safari-UI-Template-for-Sketch)
+
+<small>Android and Chrome are trademarks of Google Inc.  
+Dell is a trademark of Dell Inc.  
+iPad Air, iPhone, Mac, MacBook, OS X, and Safari are registered trademarks of Apple, Inc.  
+Firefox is a registered trademark of the Mozilla Foundation.</small>
