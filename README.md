@@ -1,7 +1,7 @@
 # ScreenshotFrames
 v1.5.2
 
-ScreenshotFrames is a small CSS library that lets you add responsive browser and device frames around images (screenshots, for example) on a webpage.
+ScreenshotFrames is a small CSS library that lets you add browser and device frames around images (screenshots, for example) on an html page. All frames are fully responsive down to the narrowest standard smartphone width. And because every graphic element that resizes is either an svg (e.g. device frames) or straight CSS (e.g. browser titlebar backgrounds and borders), the frames will always be no crisp matter how big or small you present them.
 
 **[Check out the demo pen!](http://codepen.io/henry/pen/NAYbNd?editors=1100)**
 
@@ -28,8 +28,6 @@ These are the frames supported in *screenshot-frames.min.css*.
 If you don't need them all, consider using the lighter-weight *screenshot-frames-basics.min.css*, which only includes support for Safari&reg;, iPad Air&reg;, and iPhone&reg;.
 
 You can also build your own custom set of frames (requires node): clone or download the repo, edit *src/screenshot-frames-custom.less* as necessary, and then in the ScreenshotFrames directory run `npm install` (may require `sudo npm install` depending on your setup) and `gulp build:custom`.
-
-All frames are responsive. Responsive graphic elements are svg's (e.g. device frames) or straight CSS (e.g. browser titlebar backgrounds are borders), so they'll be crisp at any size.
 
 #### Browsers
 
