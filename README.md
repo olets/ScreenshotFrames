@@ -13,7 +13,9 @@ Add the [screenshot-frames.min.css](https://github.com/olets/ScreenshotFrames/bl
 		<img ... />
 	</div>
 
-where "framename" is descriptive of the frame (e.g. `.screenshot-ipad`).	
+where "framename" is descriptive of the frame (e.g. `.screenshot-ipad`).
+
+(Of course you can also use the unminified stylesheets, but really they're just included for Bower support.)	
 
 #### Restrictions
 
@@ -92,7 +94,7 @@ use `.screenshot-iphone`
 &nbsp;
 
 ## Contributing
-PRs are welcome. For each new frame
+Adding new frames is extremely easy, and PRs are welcome. For each new frame
 
 - add the stylesheet *src/framename/screenshot-frame-framename.less*
 	- for base64 encoded background images (cf. [Safari frame](https://github.com/olets/ScreenshotFrames/blob/master/src/safari/screenshot-frame-safari.less)), use  
