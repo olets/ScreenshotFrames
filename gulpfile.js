@@ -18,6 +18,7 @@ const del = require('del'),
     base64 = require('gulp-base64'),
     cleanCss = require('gulp-clean-css'),
     concat = require('gulp-concat'),
+    cssbeautify = require('gulp-cssbeautify'),
     inject = require('gulp-inject'),
     less = require('gulp-less'),
     plumber = require('gulp-plumber'),
@@ -62,7 +63,7 @@ gulp.task('screenshot-frames:compile:frames', function(file) {
 
 // make the custom stylesheet
 // ideally this would first run the frames' compilation, but that currently cuts off the stream
-gulp.task('screenshot-frames:compile:custom', /* ['screenshot-frames:compile:frames'],*/ function() {
+gulp.task('screenshot-frames:consolidate:custom', /* ['screenshot-frames:compile:frames'],*/ function() {
     // merge the banner, mixins, and custom stylesheet, and save
     return gulp.src(['./src/banner.css', './src/screenshot-frames-mixins.less', './src/screenshot-frames-custom.less'])
         .pipe(concat('screenshot-frames-custom.less'))
@@ -71,7 +72,7 @@ gulp.task('screenshot-frames:compile:custom', /* ['screenshot-frames:compile:fra
 
 // make the basic and full stylesheets
 // ideally this would first run the frames' compilation, but that currently cuts off the stream
-gulp.task('screenshot-frames:compile', /* ['screenshot-frames:compile:frames'],*/ function() {
+gulp.task('screenshot-frames:consolidate', /* ['screenshot-frames:compile:frames'],*/ function() {
     // merge the banner, mixins, and basic stylesheet, and save
     gulp.src(['./src/banner.css', './src/screenshot-frames-mixins.less', './src/screenshot-frames-basics.less'])
         .pipe(concat('screenshot-frames-basics.less'))
@@ -83,8 +84,8 @@ gulp.task('screenshot-frames:compile', /* ['screenshot-frames:compile:frames'],*
 });
 
 // make the final minified stylesheets
-gulp.task('screenshot-frames:minify', function() {
-    // for each of the main stylesheets
+gulp.task('screenshot-frames:compile', ['screenshot-frames:clean:compiled'], function() {
+    // for each of the main LESS stylesheets
     return gulp.src(['./temp/*.less'])
         // report any CSS/LESS errors
         .pipe(plumber({
@@ -95,23 +96,39 @@ gulp.task('screenshot-frames:minify', function() {
         }))
         // compile LESS
         .pipe(less())
-        .pipe(rename({ extname: ".min.css" }))
-        // minify
+        // minify to format the embedded svg's, and keeping the banner
         .pipe(cleanCss({
             keepSpecialComments: 1
         }))
-        // save
+        // reexpand
+        .pipe(cssbeautify())
+        // save the expanded copy
+        .pipe(rename({ extname: ".css" }))
         .pipe(gulp.dest("."))
 });
 
-gulp.task('clean:temp', function() {
+// make the minified stylesheets
+gulp.task('screenshot-frames:minify', function() {
+    // for each of the compiled stylesheets
+    return gulp.src(['./*.css'])
+        // minify, keeping the banner
+        .pipe(cleanCss({
+            keepSpecialComments: 1
+        }))
+        .pipe(rename({ extname: ".min.css" }))
+        .pipe(gulp.dest("."))
+});
+
+// this should really be screenshot-frames:clean:temp, screenshot-frames:clean:compiled, and screenshot-frames:clean,
+// but screenshot-frames:clean looks nicer than screenshot-frames:clean:temp in the console log when you run `gulp build`
+gulp.task('screenshot-frames:clean', function() {
     del('./temp')
 });
 // dev tasks
-gulp.task('clean:minified', function() {
-    del(['./*.min.css'])
+gulp.task('screenshot-frames:clean:compiled', function() {
+    del(['./*.css'])
 })
-gulp.task('clean', ['clean:minified', 'clean:temp']);
+gulp.task('screenshot-frames:clean:all', ['clean:compiled', 'clean']);
 
 
 // main tasks
@@ -121,9 +138,9 @@ gulp.task('config', ['screenshot-frames:compile:frames']);
 // calling it "config" is a white lie designed to 1) be memorable, 2) sound necessary (which it is)
 
 gulp.task('build:custom', function() {
-    runSequence('screenshot-frames:compile:custom', 'screenshot-frames:minify', 'clean:temp')
+    runSequence('screenshot-frames:consolidate:custom', 'screenshot-frames:compile', 'screenshot-frames:minify', 'screenshot-frames:clean')
 });
 
 gulp.task('build', function() {
-    runSequence('screenshot-frames:compile', 'screenshot-frames:minify', 'clean:temp')
+    runSequence('screenshot-frames:consolidate', 'screenshot-frames:compile', 'screenshot-frames:minify', 'screenshot-frames:clean')
 });
