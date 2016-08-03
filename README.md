@@ -1,5 +1,5 @@
 # ScreenshotFrames
-v1.5.2
+v1.5.3
 
 ScreenshotFrames is a small CSS library that lets you add browser and device frames around images (screenshots, for example) on an html page. All frames are fully responsive down to the narrowest standard smartphone width. And because every graphic element that resizes is either an svg (e.g. device frames) or straight CSS (e.g. browser titlebar backgrounds and borders), the frames will always be no crisp matter how big or small you present them.
 
