@@ -3,8 +3,7 @@
   "version": "1.5.3",
   "description": "Styles for adding browser and device frames to images",
   "main": [
-    "screenshot-frames.css",
-    "screenshot-frames-basics.css"
+    "screenshot-frames.css"
   ],
   "authors": [
     "Henry Bley-Vroman"
