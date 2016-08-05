@@ -47,7 +47,7 @@ use `.screenshot-chrome`
 
 - MacBook&reg;  
 use `.screenshot-macbook`  
-*takes image with aspect ratio 393:245*  
+*takes image with aspect ratio 393:245 (see [#1](https://github.com/olets/ScreenshotFrames/issues/1))*  
 <img src="https://raw.githubusercontent.com/olets/ScreenshotFrames/master/images/macbook.png" width="400">
 
 - Mac&reg; monitor (Thunderbolt display)  
