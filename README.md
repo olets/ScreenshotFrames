@@ -1,7 +1,7 @@
 # ScreenshotFrames
 v1.5.3
 
-ScreenshotFrames is a small CSS library that lets you add browser and device frames around images (screenshots, for example) on an html page. All frames are fully responsive down to the narrowest standard smartphone width. And because every graphic element that resizes is either an svg (e.g. device frames) or straight CSS (e.g. browser titlebar backgrounds and borders), the frames will always be no crisp matter how big or small you present them.
+ScreenshotFrames is a small CSS library that lets you add browser and device frames around images (screenshots, for example) on an html page. All frames are fully responsive down to the narrowest standard smartphone width. And because every graphic element that resizes is either an svg (e.g. devices) or straight CSS (e.g. browser titlebar backgrounds and borders), the frames will always be crisp no matter how big or small you present them.
 
 **[Check out the demo pen!](http://codepen.io/henry/pen/NAYbNd?editors=1100)**  
 &nbsp;  
@@ -25,11 +25,16 @@ The `.screenshot-framename` must be 100% wide, can't have padding, and can't hav
 
 ## Available Frames
 
-These are the frames supported in *screenshot-frames.min.css*.
+*screenshot-frames.min.css* supports Chrome&trade;, iPad Air&reg;, iPhone&reg;, Mac&reg; monitor (Thunderbolt display), MacBook&reg;, PC monitor (Dell&trade; Ultrasharp display), and Safari&reg;.
 
-If you don't need them all, consider using the lighter-weight *screenshot-frames-basics.min.css*, which only includes support for Safari&reg;, iPad&reg;, and iPhone&reg;.
+If you don't need all that, consider using the lighter-weight *screenshot-frames-basics.min.css*, which only includes support for Safari, iPad, and iPhone.
 
-You can also build your own custom set of frames (requires node): clone or download the repo, edit *src/screenshot-frames-custom.less* as necessary, and then in the ScreenshotFrames directory run `npm install` (may require `sudo npm install` depending on your setup) and `gulp build:custom`.
+You can also build your own custom set of frames (requires node): clone or download the repo, edit *src/screenshot-frames-custom.less* as necessary, and then in the ScreenshotFrames directory run
+
+	$ npm install
+	$ gulp build:custom
+	
+(Depending on your setup, you may need to do `sudo npm install`.) Your custom frame set will be saved as *screenshot-frames-custom.min.css`*.	
 
 #### Browsers
 
@@ -38,19 +43,19 @@ use `.screenshot-safari`
 *image aspect ratio doesn't matter; container should be ≥ 310px wide*  
 <img src="https://raw.githubusercontent.com/olets/ScreenshotFrames/master/images/safari.png" width="400">
 
-- Chrome&trade;  
+- Chrome  
 use `.screenshot-chrome`  
 *image aspect ratio doesn't matter; container should be ≥ 220px wide*  
 <img src="https://raw.githubusercontent.com/olets/ScreenshotFrames/master/images/chrome.png" width="400">
 
 #### Desktop
 
-- MacBook&reg;  
+- MacBook  
 use `.screenshot-macbook`  
 *takes image with aspect ratio 393:245 (see [#1](https://github.com/olets/ScreenshotFrames/issues/1))*  
 <img src="https://raw.githubusercontent.com/olets/ScreenshotFrames/master/images/macbook.png" width="400">
 
-- Mac&reg; monitor (Thunderbolt display)  
+- Mac monitor (Thunderbolt display)  
 use `.screenshot-mac`  
 *takes image with aspect ratio 16:9*  
 <img src="https://raw.githubusercontent.com/olets/ScreenshotFrames/master/images/mac.png" width="400">
@@ -62,7 +67,7 @@ use `.screenshot-pc`
 
 #### Mobile
 
-- iPad Air&reg; (silver)  
+- iPad Air (silver)  
 use `.screenshot-ipad`  
 *takes image with aspect ratio 3:4*  
 <img src="https://raw.githubusercontent.com/olets/ScreenshotFrames/master/images/ipad.png" width="300">
