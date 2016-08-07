@@ -60,7 +60,7 @@ use `.screenshot-mac`
 *takes image with aspect ratio 16:9*  
 <img src="https://raw.githubusercontent.com/olets/ScreenshotFrames/master/images/mac.png" width="400">
 
-- PC monitor (Dell&trade; Ultrasharp display)  
+- PC monitor (Dell Ultrasharp display)  
 use `.screenshot-pc`  
 *takes image with aspect ratio 16:9*  
 <img src="https://raw.githubusercontent.com/olets/ScreenshotFrames/master/images/pc.png" width="400">
