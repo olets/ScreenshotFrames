@@ -34,7 +34,7 @@ You can also build your own custom set of frames (requires node): clone or downl
 	$ npm install
 	$ gulp build:custom
 	
-(Depending on your setup, you may need to do `sudo npm install`.) Your custom frame set will be saved as *screenshot-frames-custom.min.css`*.	
+(Depending on your setup, you may need to do `sudo npm install`.) Your custom frame set will be saved as *screenshot-frames-custom.min.css*.	
 
 #### Browsers
 
