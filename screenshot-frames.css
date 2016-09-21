@@ -1,6 +1,6 @@
 /*! ScreenshotFrames
 
-    v1.5.3 - 2016-08-03
+    v1.5.4 - 2016-09-12
    
     https://github.com/olets/ScreenshotFrames
     Copyright (c) 2016 Henry Bley-Vroman (@olets)
@@ -15,7 +15,8 @@
 }
 
 .screenshot-ipad img,.screenshot-iphone img,.screenshot-safari img {
-    width: 100%
+    width: 100%;
+    display: block
 }
 
 .screenshot-ipad:after,.screenshot-iphone:after,.screenshot-safari:after {
@@ -120,7 +121,8 @@
 }
 
 .screenshot-chrome img,.screenshot-mac img,.screenshot-macbook img,.screenshot-pc img {
-    width: 100%
+    width: 100%;
+    display: block
 }
 
 .screenshot-chrome:after,.screenshot-mac:after,.screenshot-macbook:after,.screenshot-pc:after {
@@ -171,10 +173,17 @@
     top: 38px;
     right: 60px;
     height: 22px;
-    min-width: 100px;
+    min-width: 76px;
     background: #fff;
     border-radius: 3px;
-    border: 1px solid #eaeaea
+    border: 1px solid #eaeaea;
+    color: grey;
+    font-family: sans-serif;
+    line-height: 22px;
+    padding-left: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    content: attr(data-screenshoturl)
 }
 
 .screenshot-chrome:after {
