@@ -1,5 +1,5 @@
 # ScreenshotFrames
-v1.5.3
+v1.5.4
 
 ScreenshotFrames is a small CSS library that lets you add browser and device frames around images (screenshots, for example) on an html page. All frames are fully responsive down to the narrowest standard smartphone width. And because every graphic element that resizes is either an svg (e.g. devices) or straight CSS (e.g. browser titlebar backgrounds and borders), the frames will always be crisp no matter how big or small you present them.
 
@@ -46,6 +46,7 @@ use `.screenshot-safari`
 - Chrome  
 use `.screenshot-chrome`  
 *image aspect ratio doesn't matter; container should be ≥ 220px wide*  
+Supports the optional `data-screenshoturl` attribute. Use `data-screenshoturl="this://text.appearsinthe.addressbar"` (see [the demo pen](http://codepen.io/henry/pen/NAYbNd?editors=1100) for an example)  
 <img src="https://raw.githubusercontent.com/olets/ScreenshotFrames/master/images/chrome.png" width="400">
 
 #### Desktop
